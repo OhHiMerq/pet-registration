@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.id-data {border-style: solid;}
+    </style>
+</head>
+<body>
+    <h2>List of Registered Pets!</h2>
+    <% data.forEach(pet => { %>
+        <div class="id-data">
+            <label>Name: </label><%= pet.name %><br>
+            <label>Breed: </label><%= pet.breed %><br>
+            <label>Sex: </label><%= pet.sex %><br>
+            <a href="/profile/<%=pet.name%>">--profile--</a>
+        </div><br>
+    <% }) %>
+
+    <hr>
+    <a href="/">Home | </a>
+    <a href="/reg-form">Register | </a>
+</body>
+</html>

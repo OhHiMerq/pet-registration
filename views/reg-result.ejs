@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.id-data {border-style: solid;}
+    </style>
+</head>
+<body>
+    <h1>Registered Successfully!</h1>
+    <div class="id-data">
+        <h2>Review of Registration Data</h2>
+        <label>Name: </label><%= data.name %><br>
+        <label>Breed: </label><%= data.breed %><br>
+        <label>Sex: </label><%= data.sex %><br><br>
+    </div>
+    <br><hr>
+    <a href="/">Home | </a>
+    <a href="/reg-form">Register Another Pet | </a>
+    <a href="/pet-list">Registered Pets | </a>
+
+</body>
+</html>
